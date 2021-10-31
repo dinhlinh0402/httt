@@ -1,0 +1,79 @@
+<head>
+    <title>Openlayers test</title>
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+    <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <div id="map" class="map"></div>
+
+    <div class="right-panel">
+        <div id="checkmap" class="checkmap">
+            <input type="checkbox" id="chkVinmart" checked style="float:left" /><label for="chkVinmart"
+                style="float:left; margin-right: 20px">Siêu thị VinMart</label>
+            <img
+                src="http://localhost:8080/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&LAYER=baiThi:vinmart" />
+        </div>
+
+        <div id="checkmap" class="checkmap">
+            <input type="checkbox" id="chkRoads" checked style="float:left" /><label for="chkRoads"
+                style="float:left; margin-right: 20px">Đường phố</label>
+            <img
+                src="http://localhost:8080/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&LAYER=baiThi:roads" />
+        </div>
+
+        <div id="checkmap" class="checkmap">
+            <input type="checkbox" id="chkNaturnal" checked style="float:left" /><label for="chkNaturnal"
+                style="float:left; margin-right: 20px">Tự nhiên</label>
+            <img
+                src="http://localhost:8080/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&LAYER=baiThi:naturnal" />
+        </div>
+
+        <div id="checkmap" class="checkmap">
+            <input type="checkbox" id="chkLanduse" checked style="float:left" /><label for="chkLanduse"
+                style="float:left; margin-right: 20px">Landuse</label>
+            <img
+                src="http://localhost:8080/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&LAYER=baiThi:landuse" />
+        </div>
+
+        <div id="checkmap" class="checkmap">
+            <input type="checkbox" id="chkRailway" checked style="float:left" /><label for="chkRailway"
+                style="float:left; margin-right: 20px">Đường sắt</label>
+            <img
+                src="http://localhost:8080/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&LAYER=baiThi:railways" />
+        </div>
+
+        <div id="checkmap" class="checkmap">
+            <input type="checkbox" id="chkBuildings" checked style="float:left" /><label for="chkBuildings"
+                style="float:left; margin-right: 20px">Buildings</label>
+            <img
+                src="http://localhost:8080/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&LAYER=baiThi:buildings" />
+        </div>
+
+        <div id="checkmap" class="checkmap">
+            <input type="checkbox" id="chkHanhChinh" checked style="float:left" /><label for="chkHanhChinh"
+                style="float:left; margin-right: 20px">Hành chính</label>
+            <img
+                src="http://localhost:8080/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&LAYER=baiThi:hanhchinhhn" />
+        </div>
+
+        <div id="info"></div>
+    </div>
+
+    <div id="popup" class="ol-popup">
+        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+
+        <div id="popup-content"></div>
+
+    </div>
+
+</body>
+
+<script src="/js/main.js"></script>
+
+</html>
